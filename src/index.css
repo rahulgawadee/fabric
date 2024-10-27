@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply to the whole document */
+body {
+    font-family: 'Open Sans', sans-serif; /* Example default font */
+  }
+  
+  /* Apply specific fonts to different elements */
+  .bebas-font {
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+  .coming-soon-font {
+    font-family: 'Coming Soon', cursive;
+  }
+  
+  .playfair-font {
+    font-family: 'Playfair Display', serif;
+  }
+  
