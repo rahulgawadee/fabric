@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutUs = () => {
+const Aboutus = () => {
   return (
     <div className="flex flex-col items-center p-6 sm:p-12 bg-black text-white">
       {/* Header */}
@@ -63,4 +63,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Aboutus;

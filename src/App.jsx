@@ -6,7 +6,7 @@ import Homepage from "./components/Homepage";
 import ImageUpload from "./components/ImageUpload";
 import Contactus from "./components/Contactus";
 import Login from "./components/Login";
-import AboutUs from "./components/Aboutus";
+import Aboutus from "./components/Aboutus";
 
 function App() {
   // Example upload function
@@ -29,7 +29,7 @@ function App() {
           <Route path="/upload" element={<ImageUploadPage onUpload={handleImageUpload} />} />
           <Route path="/Contactus" element={<Contactus />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/AboutUs" element={<Aboutus />} />
 
         </Routes>
         <Footer />
