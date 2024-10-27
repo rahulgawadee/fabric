@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Contactpage from './Contactpage';
+import Testimonial from './Testimonial';
 
 const Homepage = () => {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ const Homepage = () => {
   
   return (
 
-    <div className='bg-black'>
+    <div className='bg-black '>
     <div className="min-h-screen  flex flex-col items-center justify-center playfair-font ">
       <div className="hero-content flex flex-col lg:flex-row items-center gap-10 px-4 mt-11">
         {/* Responsive image with max width constraints */}
@@ -26,14 +27,46 @@ const Homepage = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
             Fabric Damage Detection and Material Identification
           </h1>
-          <p className="py-6 text-gray-300">
+          <p className="py-6 text-white">
             Our AI-powered solution processes image data to accurately identify materials and assess damage extent, enhancing the speed and precision of defect detection.
           </p>
-          <button 
-            onClick={handleGetStarted} 
-            className="btn btn-primary text-black bg-yellow-500 hover:bg-yellow-600">
-            Get Started
-          </button>
+       
+       
+       
+        {/*Button */}
+
+
+
+          <button  onClick={handleGetStarted}  className="mt-6 relative flex items-center gap-1 px-9 py-4 border-4 border-transparent text-lg bg-inherit rounded-full font-semibold text-lime-400 shadow-[0_0_0_2px] shadow-lime-400 cursor-pointer overflow-hidden transition-all duration-600 ease-out hover:shadow-[0_0_0_12px] hover:shadow-transparent hover:text-gray-900 hover:rounded-lg active:scale-95">
+      
+      {/* Left Arrow SVG */}
+      <svg
+        viewBox="0 0 24 24"
+        className="absolute left-[-25%] w-6 fill-red-400 transition-all duration-800 ease-out group-hover:left-4"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+      </svg>
+
+      {/* Button Text */}
+      <span className="relative z-10 translate-x-[-3px] transition-transform duration-800 ease-out group-hover:translate-x-3">
+        Get Started
+      </span>
+
+      {/* Expanding Circle */}
+      <span className="absolute top-1/2 left-1/2 bg-blue-400 w-5 h-5 rounded-full opacity-0 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-800 ease-out group-hover:w-[220px] group-hover:h-[220px] group-hover:opacity-100"></span>
+      
+      {/* Right Arrow SVG */}
+      <svg
+        viewBox="0 0 24 24"
+        className="absolute right-4 w-6 fill-lime-400 transition-all duration-800 ease-out group-hover:right-[-25%]"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+      </svg>
+      
+    </button>
+          
         </div>
       </div>
 
@@ -49,6 +82,8 @@ const Homepage = () => {
     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400 scale-150" />
   </div>
 </div>
+
+<Testimonial/>
 
 
  {/* Team Member Cards Section */}

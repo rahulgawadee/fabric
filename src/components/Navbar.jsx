@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Homepage from './Homepage';
+import Login from './Login';
+import AboutUs from './Aboutus';
 
 const Navbar = () => {
   return (
@@ -28,11 +30,11 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <Link to="/"> <li><a>Homepage</a></li></Link>
-              <Link to="#team"><li><a>Team</a></li></Link>
-              <Link to="#how-to-use"><li><a>How to use?</a></li></Link>
-              <Link to="/contactus"><li><a>Contact Us</a></li></Link>
-              <Link to="#about"><li><a>About</a></li></Link>
+              <Link to="/"> <li>Homepage</li></Link>
+              <Link to="#team"><li>Team</li></Link>
+              <Link to="#how-to-use"><li>How to use?</li></Link>
+              <Link to="/contactus"><li>Contact Us</li></Link>
+              <Link to="/AboutUs"><li>About</li></Link>
             </ul>
           </div>
         </div>
@@ -47,11 +49,12 @@ const Navbar = () => {
             />
           </Link>
         </div>
+        
 
         {/* User Logo on Navbar End */}
         <div className="navbar-end">
           <div className="flex items-center">
-            <Link to="/Login">
+            <Link to="/Login"  >
               <img
                 src="src/assets/userlogo.svg"
                 alt="User Logo"
